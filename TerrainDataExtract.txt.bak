@@ -117,10 +117,6 @@ gnuplot
 gnuplot> splot "pointsfile" using 1:2:3 with lines
 # a 3D plot of the file will be displayed. X11 display server required.
 
-# Other gnuplot tricks
-gnuplot> set xlabel "x axis"; set ylabel "y axis"; set zlabel "z axis"; set view equal xyz
-gnuplot> splot 'Level_Barrens/rock-flag-positions.txt' u 1:2:3:4 w points palette
-gnuplot> splot 'Level_Barrens/rock-flag-positions.txt' u 1:2:3:4:5 w labels tc palette offset 0,-1 point palette
 
 #######################################
 # Using QuickBms to extract and re-insert pieces. Download QuickBms first, then
