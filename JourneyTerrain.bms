@@ -1,0 +1,4 @@
+log HeightMap.raw 0 0x40000
+log BlockMapA.raw 0x40000 0x20000
+log BlockMapB.raw 0x60000 0x20000
+log DustMap.raw 0x80000 0x80000
