@@ -156,7 +156,8 @@ function processFiles($directory, $writefile)
 
   foreach ($files as $file)
   {
-    handleFile($directory, $writefile, $file);
+    if(!stristr($file, '.'))
+      handleFile($directory, $writefile, $file);
   }
 
 }
