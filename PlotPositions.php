@@ -242,6 +242,8 @@ function translatePosition($line)
 
   // output the coords and color index;
   $Label = preg_replace('/P_/', '', $globalclass);
+  $Label = preg_replace('/C_/', '', $Label);
+  $Label = preg_replace('/_/', '-', $Label);
   return "$x $y $z \"$Label\" $color\r\n";
 }
 
